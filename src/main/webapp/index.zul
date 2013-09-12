@@ -1,0 +1,64 @@
+<zk>
+	<window id="win" title="MotoGp Rider"
+		apply="com.ara.gprider.ctrl.GpRiderCtrl" border="normal" width="100%"
+		height="100%">
+		<vbox>
+			<hbox>
+				<groupbox mold="3d">
+					<caption label="Rider Photo" />
+					<vbox>
+						<image id="gambar" width="330px" height="250px" />
+						<button id="btnUpload" label="Upload Photo"
+							upload="true" />
+					</vbox>
+				</groupbox>
+				<space />
+				<groupbox mold="3d">
+					<caption label="Rider Detail" />
+					<hbox align="center">
+						<cell width="100px">
+							<label value="Rider Name" />
+						</cell>
+						<cell>
+							<textbox id="tbRiderName" />
+						</cell>
+					</hbox>
+					<separator />
+					<hbox align="center">
+						<cell width="100px">
+							<label value="Rider Bike" />
+						</cell>
+						<cell>
+							<textbox id="tbRiderBike" />
+						</cell>
+					</hbox>
+					<separator />
+					<hbox align="center">
+						<cell width="100px">
+							<label value="Rider Number" />
+						</cell>
+						<cell>
+							<textbox id="tbRiderNumber" />
+						</cell>
+					</hbox>
+				</groupbox>
+				<vbox>
+					<button id="btnAdd" label="Add/Edit" width="100px"
+						mold="trendy" />
+					<button id="btnSave" label="save" mold="trendy"
+						width="100px" />
+				</vbox>
+			</hbox>
+			<separator />
+
+			<listbox id="lbRider" mold="paging" width="100%"
+				height="400px">
+				<listhead>
+					<listheader label="Rider Name" />
+					<listheader label="Bike" />
+					<listheader label="Number" />
+				</listhead>
+			</listbox>
+		</vbox>
+	</window>
+</zk>
